@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: cadetblue;
+}
+
+header {
+    padding: 5px 0 5px 5px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.nav-item {
+    color: black;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+.nav-item:hover {
+    background-color: darkgray;
+}
+
+.title {
+    padding: 10px;
+}
+
+.title::after {
+    display: block;
+    height: 2px;
+    width: 98%;
+    background-color: black;
+    content: "";
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.manager-name {
+    margin-left: 1%;
+}
+
+.management-options {
+    padding: calc(1% + 10px);
+}
+
+.btn {
+    padding: 15px;
+    border: 1px solid black;
+    background-color: rgb(175, 175, 175);
+    color: black;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: rgb(150, 150, 150);
+}

@@ -1,3 +1,9 @@
+body{
+    background-image: url("plaid-wallpaper.jpg");
+}
+
 .title{
-    font-family: "URW Chancery L", cursive;
+    text-align: center;
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
 }

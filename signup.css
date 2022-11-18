@@ -27,9 +27,15 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
+    padding: 10px;
+}
+
+.info-input input{
+    margin-top: 20px;
 }
 
 .info-container button{
     margin-top: 50px;
+    padding: 10pt;
+    font-size: 20pt;
 }

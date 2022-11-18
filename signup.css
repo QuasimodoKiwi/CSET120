@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-image: url("plaid-wallpaper.jpg");
 }
@@ -6,4 +12,18 @@ body{
     text-align: center;
     background-color: white;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-color: aliceblue;
+    margin-top: 100px;
+    width: 100%;
+    height: 200pt;
+}
+
+.info-container button{
+    margin-top: 50px;
 }

@@ -15,13 +15,19 @@ body{
 }
 
 .info-container{
-    display: flex;
-    flex-direction: column;
     padding: 50px;
     background-color: aliceblue;
+    margin: 0 auto;
     margin-top: 100px;
-    width: 100%;
-    height: 200pt;
+    width: 50%;
+    height: 300pt;
+}
+
+.info-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
 }
 
 .info-container button{

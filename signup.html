@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" href="signup.css">
         <title>Signup Page</title>
+        <script src="signup.js"></script>
     </head>
     <body>
         <div class="title">
@@ -13,13 +14,19 @@
                 <div>
                     <label for="fname">First name</label>
                     <input type="text" name="" id="">
+                </div>
+
+                <div>
                     <label for="lname">Last name</label>
                     <input type="text" name="lname" id="lname">
+                </div>
+
+                <div>
                     <label for="email">Email Address</label>
                     <input type="email" name="email" id="email">
                 </div>
+                <button id="submit" onclick= "createUser(this)">Submit</button>
             </div>
-            <button id="submit">Submit</button>
         </section>
     </body>
 </html>

@@ -45,13 +45,24 @@
 
 .logo {
     border-radius: 50%;
-    height: 200px;
+    height: 250px;
 }
+
+
+.logo-nav h1 {
+    color: white;
+    font-size: 45px;
+    text-decoration: underline;
+}
+
+
+
 
 /* nav bar */
 nav {
     display: flex;
     justify-content: space-evenly;
+    
 }
 
 .navbar-1 {
@@ -65,7 +76,7 @@ nav {
 .navbar-1 a {
     text-decoration: none;
     color: white;
-    font-size:35px;
+    font-size: 45px;
     text-shadow: 100px;
 }
 
@@ -98,6 +109,7 @@ nav {
 .plot-row-left {
     background-color: hotpink;
     width: 40%;
+    margin: 40px 80px;
     
 
 }
@@ -105,6 +117,7 @@ nav {
 .plot-row-left img {
     width: 100%;
     height: 100%;
+    
 
     
 }
@@ -115,7 +128,7 @@ nav {
 
 
 .plot-row-right {
-    background-color: rgba(240, 221, 168, 0.085);
+    background-color: rgba(245, 245, 245, 0.768);
     width: 60%;
     text-align: center;
     
@@ -126,6 +139,7 @@ nav {
     /* margin-top: 25%; */
     font-weight: 400px;
     font-size: 40px;
+    margin: 60px;
 
 }
 
@@ -148,23 +162,31 @@ nav {
 /* reviews */
 
 .reviews {
-    background-image: url(./Images/far-hd.jpg);
+    /* background-image: url(./Images/far-hd.jpg); */
     background-size: cover;
     text-align: center;
     height: 900px;
 }
 
 .reviews h2 {
-    color: white;
+    /* color: white; */
     /* margin-top: 50px; */
     height: 100px;
     font-size: 80px;
+    margin-top: 50px;
+    text-decoration: underline;
 }
 
 
 
 /* review boxes */
+
+.reviews {
+    height: 800px;
+}
+
 .content {
+   
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
@@ -177,7 +199,85 @@ nav {
 }
 
 .reviews-leftbox, .reviews-rightbox {
-    background-color: white;
+    background-color: rgba(171, 147, 147, 0.252);
     margin: 50px;
+    border: none;
     
 }
+
+
+/* Social media */
+
+
+
+
+
+.social {
+    width: 100%;
+    margin: 50px;
+    
+    
+}
+
+.icon-links {
+    width: 100%;
+    font-size: 95px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+
+/* contact us */
+
+.customer-message {
+    height: 800px;
+}
+
+
+.contact-us {
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.contact-form {
+    height: 400px;
+    
+}
+
+
+.contact-list {
+    
+}
+
+.contact-list li {
+    margin-top: 50px;
+    font-size: 45px;
+}
+
+.contact-list input {
+    height: 100px;
+    width: 400px;
+    border-radius: 20%;
+}
+
+.contact-form h2 {
+    font-size: 65px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

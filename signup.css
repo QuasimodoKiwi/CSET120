@@ -15,19 +15,33 @@ body{
 }
 
 .info-container{
-    padding: 50px;
+    border: 5px solid orange;
     background-color: aliceblue;
-    margin: 0 auto;
-    margin-top: 100px;
     width: 50%;
     height: 300pt;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 50px;
 }
 
-.info-input{
+.info-wrapper{
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     padding: 10px;
+    /* border: 5px solid red; */
+}
+
+.info-format{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#submitButton{
+    width: 100px;
+    height: 50px;
+    border-radius: 10pt;
 }
 
 input{

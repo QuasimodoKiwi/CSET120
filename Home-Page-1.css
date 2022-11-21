@@ -4,11 +4,23 @@
 * {
     padding: 0%;
     margin: 0%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
 }
 
+body {
+    
+}
 
 /* top heading */
 
+
+.top-background {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)) ,url(./Images/food-wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
 .sign-up-in {
     width: 100%;
@@ -29,8 +41,8 @@
 /* nav bar and logo */
 .heading {
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)) ,url(./Images/food-wallpaper.jpg);
-    background-size: cover;
+    /* background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)) ,url(./Images/food-wallpaper.jpg);
+    background-size: cover; */
 
 }
 
@@ -102,6 +114,7 @@ nav {
     background-size: cover ;
     background-attachment: fixed;
     height: 600px;
+    margin: 50px;
 }
 
 
@@ -145,17 +158,19 @@ nav {
 
 
 .plot-row-right button {
-    height: 75px;
+    height: 100px;
     width: 200px;
     border-radius: 30% ;
     border: none;
     font-size: 40px;
     font-weight: bold;
+    background-color: rgba(131, 125, 125, 0.542);
 
 }
 
 .plot-row-right button a {
-    text-decoration: none;
+    /* text-decoration: none; */
+    color: rgb(0, 0, 0);
 }
 
 
@@ -169,12 +184,12 @@ nav {
 }
 
 .reviews h2 {
-    /* color: white; */
+    color: white;
     /* margin-top: 50px; */
     height: 100px;
     font-size: 80px;
     margin-top: 50px;
-    text-decoration: underline;
+    text-decoration:underline;
 }
 
 
@@ -199,7 +214,7 @@ nav {
 }
 
 .reviews-leftbox, .reviews-rightbox {
-    background-color: rgba(171, 147, 147, 0.252);
+    background-color: rgba(255, 246, 246, 0.733);
     margin: 50px;
     border: none;
     
@@ -226,6 +241,13 @@ nav {
     justify-content: space-evenly;
     
 }
+
+.icon-links ion-icon:hover {
+    color: rgb(69, 69, 239);
+}
+
+
+
 
 
 /* contact us */

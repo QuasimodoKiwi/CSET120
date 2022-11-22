@@ -1,12 +1,19 @@
 function createUser(){
-    console.log("Hello World");
-
-    let userArray = {
+    let userInfo = {
         firstName: document.getElementById("fname").value,
         lastName: document.getElementById("lname").value,
         email: document.getElementById("email").value
     };
 
-    localStorage.setItem("userTest", JSON.stringify(userArray));    
-    console.log(JSON.parse(localStorage.getItem("userArray")));
+    localStorage.setItem("userTest", JSON.stringify(userInfo));    
+    
+    console.log(JSON.parse(localStorage.getItem("userInfo")));
+
+    let users = JSON.parse(localStorage.getItem("userInfo"));
+    
+    return users;
+}
+
+const saveToLocalStorage = () => {
+    localStorage.setItem("");
 }

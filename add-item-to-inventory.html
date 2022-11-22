@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Checkout | Add Inventory</title>
+
+    <link rel="stylesheet" href="./styles/add-item-to-inventory.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <li>
+                <ion-icon class="back-icon" name="arrow-back-outline"></ion-icon>
+                <a href="./manage-inventory.html">Back</a>
+            </li>
+        </nav>
+
+        <h2 class="title">Register New Item</h2>
+
+    </header>
+
+    <section class="form-section">
+        <div class="form-wrapper">
+            <form name="item-form" id="item-form">
+                <div class="form-label-input-wrapper">
+                    <div class="form-entry">
+                        <div class="form-label">
+                            <label for="item-name">Name:</label>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" name="item-name" id="item-name">
+                        </div>
+                    </div>
+
+                    <div class="form-entry">
+                        <div class="form-label">
+                            <label for="item-price">Price:</label>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" name="item-price" id="item-price">
+                        </div>
+                    </div>
+
+                    <div class="form-entry">
+                        <div class="form-label">
+                            <label for="item-description">Description:</label>
+                        </div>
+                        <div class="form-input">
+                            <textarea name="item-description" id="item-description" cols="25" rows="5"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-entry">
+                        <div class="form-label">
+                            <label for="item-allergies">Allergies:</label>
+                        </div>
+                        <div class="form-input">
+                            <textarea name="item-allergies" id="item-allergies" cols="25" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-entry">
+                        <div class="form-label">
+                            <label for="item-qty">Quantity:</label>
+                        </div>
+                        <div class="form-input">
+                            <input type="number" name="item-qty" id="item-qty">
+                        </div>
+                    </div>
+
+                    <div class="form-entry">
+                        <div class="form-label">
+                            <label for="item-img">Image File Name:</label>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" name="item-img" id="item-img">
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+            <button onclick="submitForm()" id="item-form-submit-btn">Add Item</button>
+        </div>
+    </section>
+
+    <script src="./scripts/add-item-to-inventory.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

@@ -12,6 +12,9 @@ function submitForm() {
         return;
     }
 
+    price = parseFloat(price);
+    qty = parseInt(qty);
+
     let item = {
         name: name,
         price: price,

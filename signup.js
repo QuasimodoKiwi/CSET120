@@ -1,14 +1,12 @@
 function createUser(){
-    let firstName = document.getElementById("fname");
-    let lastName = document.getElementById("lname");
-    let email = document.getElementById("email");
+    console.log("Hello World");
 
-    let userArray = [firstName, lastName, email];
+    let userArray = {
+        firstName: document.getElementById("fname").value,
+        lastName: document.getElementById("lname").value,
+        email: document.getElementById("email").value
+    };
 
-    for(let i = 0; i < userArray.length; i++){
-        if(firstName == ""){
-            
-        }
-    }
-
+    localStorage.setItem("userTest", JSON.stringify(userArray));    
+    console.log(JSON.parse(localStorage.getItem("userArray")));
 }

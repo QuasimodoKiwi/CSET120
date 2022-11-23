@@ -8,9 +8,20 @@
     
 }
 
-body {
-    
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* top heading */
 
@@ -113,7 +124,7 @@ nav {
     /* background-image: url(./Images/food-wallpaper.jpg); */
     background-size: cover ;
     background-attachment: fixed;
-    height: 600px;
+    height: 700px;
     margin: 50px;
 }
 
@@ -144,6 +155,7 @@ nav {
     background-color: rgba(245, 245, 245, 0.768);
     width: 60%;
     text-align: center;
+   
     
     
 }
@@ -153,6 +165,7 @@ nav {
     font-weight: 400px;
     font-size: 40px;
     margin: 60px;
+    
 
 }
 
@@ -296,8 +309,74 @@ nav {
 
 
 
+@media only screen and (max-width:1024px) {
 
 
+    .plot-row-1 {
+        background-color: darkgrey;
+        display: flex;
+        justify-content: space-between;
+        /* background-image: url(./Images/food-wallpaper.jpg); */
+        background-size: cover ;
+        background-attachment: fixed;
+        height: 400px;
+        margin: 50px;
+    }
+
+
+
+    
+    .plot-row-right {
+        background-color: rgba(245, 245, 245, 0.768);
+        width: 60%;
+        text-align: center;
+        /* overflow: scroll; */
+        overflow: auto;
+        font-size: small;
+        
+        
+    }
+
+    .plot-right-text  {
+        /* margin-top: 25%; */
+        font-weight: 400px;
+        font-size: 20px;
+        margin: 60px;
+        
+    
+    }
+
+
+    .reviews-leftbox, .reviews-rightbox {
+        background-color: rgba(255, 246, 246, 0.733);
+        margin: 50px;
+        border: none;
+        height: 400px;   
+        overflow: scroll;
+    }
+
+
+
+
+}
+
+@media only screen and (max-width:768px) {
+
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    
+ 
+    .navbar-1 a {
+        font-size: 25px;
+        font-weight: 900;
+    }
+
+
+
+}
 
 
 

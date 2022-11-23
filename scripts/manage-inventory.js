@@ -95,7 +95,7 @@ function changeQty(element) {
 }
 
 function removeItem(element) {
-    let name = element.parentNode.parentNode.getElementsByClassName("item-name")[0].innerHTML;
+    let name = element.parentNode.parentNode.parentNode.getElementsByClassName("item-name")[0].innerHTML;
 
     item = getInventoryItem(name);
     if (item == null) return;
@@ -104,8 +104,6 @@ function removeItem(element) {
     for (i = 0; i < inventory.length; i++) {
         if (inventory[i] == item) index = i;
     }
-
-    console.log(index);
 
     inventory.splice(index, 1);
 
@@ -123,4 +121,12 @@ function getInventoryItem(itemName) {
         if (item.name === itemName) itemInInv = item;
     });
     return itemInInv;
+}
+
+function modifyItem(element) {
+    let name = element.parentNode.parentNode.parentNode.getElementsByClassName("item-name")[0].innerHTML;
+
+    sessionStorage.setItem("itemToModify", name);
+
+    window.location = "./modify-inventory-item.html";
 }

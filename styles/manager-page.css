@@ -8,13 +8,9 @@ a {
     text-decoration: none;
 }
 
-body {
-    background-color: cadetblue;
-}
-
 header {
     padding: 5px 0 5px 5px;
-    background-color: white;
+    background-color: rgb(225, 225, 225);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,11 +20,11 @@ header {
 .nav-item {
     color: black;
     padding: 10px;
-    background-color: lightgray;
+    background-color: darkgray;
 }
 
 .nav-item:hover {
-    background-color: darkgray;
+    background-color: rgb(150, 150, 150);
 }
 
 .title {

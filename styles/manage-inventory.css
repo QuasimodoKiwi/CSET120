@@ -98,9 +98,14 @@ header>nav {
     align-items: center;
 }
 
+.modify-btn {
+    background-color: orange;
+    padding: 2px 15px;
+}
+
 .remove-btn {
     background-color: red;
-    padding: 2px 20px;
+    padding: 2px 15px;
 }
 
 .no-inv-msg {

@@ -68,6 +68,8 @@ function updateScreen() {
             "<label>Quantity:</label>" +
             "<input onchange=\"changeQty(this)\" type=\"number\" value=\"" + item.qty + "\">" +
             "</div>" +
+            "<div>" +
+            "<button class=\"modify-btn\" onClick=\"modifyItem(this)\">Modify</button>" +
             "<button class=\"remove-btn\" onClick=\"removeItem(this)\">Remove</button>" +
             "</div>";
 

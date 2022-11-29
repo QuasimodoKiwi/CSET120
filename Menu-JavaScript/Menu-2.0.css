@@ -1,0 +1,111 @@
+
+
+
+
+
+
+* {
+    padding: 0%;
+    margin: 0;
+    
+}
+
+
+
+body {
+    /* width:1440px; */
+}
+
+
+
+
+/* header NAV */
+.main-header {
+    padding: 100px;
+    background-image: url("./Images/chicken\ smoke.gif");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.main-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-size: 45px;
+    
+
+}
+
+.main-header h1 {text-align: center;}
+
+.nav a {
+    text-decoration: none;
+    
+}
+
+
+
+/* SIDE CART */
+
+
+.cart {
+    float: right;
+    width: 25%;
+    /* background-color: blueviolet; */
+    
+}
+
+
+
+
+
+/* Body Plot */
+
+.container {
+    
+}
+
+
+
+
+.shop-item-row {
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 50px;
+    
+    
+    
+
+}
+
+.shop-item {
+    
+    
+    
+}
+
+
+
+.shop-item-details {text-align: center;}
+
+
+
+.shop-item img {
+    height: 100px;
+    width: 200px;
+    overflow: hidden;
+    margin: 20px;
+    margin-left: 5px;
+
+}
+
+
+
+

@@ -5,15 +5,18 @@ function createUser(){
         email: document.getElementById("email").value
     };
 
-    localStorage.setItem("userTest", JSON.stringify(userInfo));    
-    
-    console.log(JSON.parse(localStorage.getItem("userInfo")));
+    userInfo.name = userInfo.lastName.toLowerCase() + "_" + userInfo.firstName.toLowerCase();
 
-    let users = JSON.parse(localStorage.getItem("userInfo"));
+    let users = JSON.parse(localStorage.getItem("users"));
     
-    return users;
-}
+    if(users == null){
+        users = [];
+    }
+    users.push(userInfo);
 
-const saveToLocalStorage = () => {
-    localStorage.setItem("");
+    localStorage.setItem("users", JSON.stringify(users));    
+    
+    console.log(JSON.parse(localStorage.getItem("users")));
+
+
 }

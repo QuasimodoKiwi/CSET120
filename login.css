@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("countryside.jpg");
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    border: 5px solid black;
+}
+
+.login-container{
+    margin: 20px 20px 20px 20px;
+    width: 500px;
+    padding: 50px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    
+}

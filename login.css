@@ -1,3 +1,5 @@
+/* Make your login page more unique! Don't make it too identical to your signup page! */
+
 *{
     margin: 0;
     padding: 0;
@@ -16,11 +18,17 @@ header{
 }
 
 .login-container{
-    margin: 20px 20px 20px 20px;
-    width: 500px;
-    padding: 50px;
+    width: 700px;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0 auto;
     text-align: center;
     border: 2px solid black;
-    border-radius: 5px;
+    border-radius: 25px;
+}
+
+.login-input{
+    margin-top: 50px;
     
 }

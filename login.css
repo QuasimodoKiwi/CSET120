@@ -27,7 +27,7 @@ header{
     border-radius: 25px;
 }
 
-.login-input{
+.loginInput{
     display: flex;
     flex-direction: column;
     align-items: flex-start;

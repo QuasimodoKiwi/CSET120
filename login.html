@@ -9,29 +9,29 @@
     <body>
         <header><h1>Login Page</h1></header>
         <section class="login-container">
-            <div class="login-input">
+            <div class="loginInput">
                 <div>
                     <h3>Login</h3>
                 </div>
                 
                 <div>
                     <label for="email">Email:</label>
-                    <input type="text" name="name" id="name">
+                    <input type="text" name="email" id="email">
                 </div>
                 
                 <div>
                     <label for="password">Password:</label>
                     <input type="text" name="password" id="password">
                 </div>
-                <button id="submit" onsubmit="login()">Submit</button>
+                <button id="submit" onclick="login()">Submit</button>
                 
             </div>
             <div class="other-inputs">
                 <div>
-                    <button>Forgot password?</button>
+                    <button id="noPasswordButton" onclick="newPassword()" >Forgot password?</button>
                 </div>
                 <div>
-                    <button>Didn't create an account?</button>
+                    <button id="noAccountButton" onclick="signup()">Didn't create an account?</button>
                 </div>
             </div>
         </section>

@@ -39,12 +39,12 @@ function newPassword(){
     for(let i = 0; i < users.length; i++){
         if(inputEmail == users.email){
             let target = document.getElementsByClassName("loginInput");
-            target.forEach(loginInput => {
-                loginInput.remove();
+            target.forEach(box => {
+                box.remove();
             });
         }
         else{
             alert("The email was not found. Please try again.");
         }
-    }
+       }
 }

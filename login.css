@@ -33,6 +33,11 @@ header{
     align-items: flex-start;
     justify-content: space-between;
     height: inherit;    
-    margin-bottom: 10px;
     padding: 80px;
+}
+
+.other-inputs{
+    margin-bottom: 100px;
+    display: block;
+    justify-content: center;
 }

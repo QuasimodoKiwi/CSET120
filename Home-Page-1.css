@@ -84,7 +84,8 @@
 /* nav bar */
 nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    
     
 }
 
@@ -140,11 +141,35 @@ nav {
 
 .plot-row-left img {
     width: 100%;
-    height: 100%;
-    
-
-    
+    height: 100%;  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .SlideShow {
     height: 400px;
@@ -174,15 +199,19 @@ nav {
     height: 100px;
     width: 200px;
     border-radius: 30% ;
-    border: none;
+    border: 4px solid black;
     font-size: 40px;
     font-weight: bold;
-    background-color: rgba(131, 125, 125, 0.542);
+    background-color:transparent;
+    
 
 }
 
+
+
+
 .plot-row-right button a {
-    /* text-decoration: none; */
+    
     color: rgb(0, 0, 0);
 }
 
@@ -353,6 +382,8 @@ nav {
         border: none;
         height: 400px;   
         overflow: scroll;
+        font-size: large;
+        font-weight: 700;
     }
 
 
@@ -374,7 +405,10 @@ nav {
         font-weight: 900;
     }
 
-
+    .plot-row-left img  {
+              width: 300px;
+              
+    }
 
 }
 

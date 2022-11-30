@@ -1,6 +1,6 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -35,29 +35,4 @@ header>nav {
 
 .title {
     padding: 5px;
-}
-
-.users-view {
-    background-color: rgb(225, 225, 225);
-    margin: 10px 1% 1%;
-    padding: calc(1%/2);
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.user {
-    margin: 3px;
-    padding: 5px;
-    border: 1px solid black;
-    border-radius: 5px;
-    box-shadow: 1px 1px 2px black;
-    min-width: 150px;
-    flex: 0 1 200px;
-}
-
-.no-users-msg {
-    text-align: center;
-    color: rgb(36, 36, 36);
-    font-size: 1.5em;
 }

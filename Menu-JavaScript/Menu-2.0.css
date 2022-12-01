@@ -38,6 +38,7 @@ body {
 /* SIDE CART */
 
 .cart {
+    padding-top: 50px;
     float: right;
     width: 25%;
     /* background-color: blueviolet; */
@@ -45,27 +46,32 @@ body {
 
 /* Body Plot */
 
-.container {}
-
-.shop-item-row {
+.content-section {
+    padding: 10px 1%;
     width: 75%;
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
-.shop-item {}
+.shop-item {
+    box-shadow: 2px 2px 3px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 24%;
+    height: 300px;
+    overflow: hidden;
+}
 
 .shop-item-details {
     text-align: center;
 }
 
-.shop-item img {
-    height: 100px;
-    width: 200px;
-    overflow: hidden;
-    margin: 20px;
-    margin-left: 5px;
-
+.shop-item-image {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
 }

@@ -85,7 +85,7 @@ if (orderHistory != undefined) {
         orderNode.innerHTML =
             "<div class=\"order-date-id-div\">" +
             "<h2 class=\"order-date\">Date: " + order.date + "</h2>" +
-            "<h2 class=\"order-id-msg\">ID: <span class=\"order-id\">" + order.id + "</span></h2>" +
+            "<h2 class=\"order-id-msg\">ID#: <span class=\"order-id\">" + order.id + "</span></h2>" +
             "</div>" +
             "<p class=\"order-total\"> Order Total: " + order.total + "</p>";
         orderNode.addEventListener('click', (element) => {

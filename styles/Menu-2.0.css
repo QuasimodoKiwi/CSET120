@@ -7,7 +7,7 @@
 /* header NAV */
 .main-header {
     padding: 100px;
-    background-image: url("./Images/chicken\ smoke.gif");
+    background-image: url("../assets/Images/chicken\ smoke.gif");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,7 +46,6 @@
     padding: 10px 1%;
     width: 75%;
     display: flex;
-    justify-content: space-evenly;
     text-align: center;
     margin-top: 40px;
 }
@@ -55,6 +54,7 @@
     box-shadow: 2px 2px 3px;
     border-radius: 5px;
     padding: 10px;
+    margin: 0 0.33% 10px;
     width: 24%;
     height: 300px;
     overflow: hidden;
@@ -66,8 +66,8 @@
 
 .shop-item-image {
     margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
+    display: block;
+    margin: 10px auto;
     height: 200px;
     width: 100%;
 }

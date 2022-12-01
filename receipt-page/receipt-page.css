@@ -7,6 +7,72 @@ body {
     
 }
 
+body {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.384), rgba(0,0,0,0.7)) ,url(./images/farm-3.jpg);
+     background-size: cover;
+     
+     background-attachment: fixed;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     
+ }
+ 
+ 
+ 
+ .receipt-form {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 10%;
+    font-size: x-large;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 5px ridge black;
+    
+ }
+ 
+ 
+ .row {
+     margin: 200px;
+ }
+ 
+ q {
+     border: 3px ridge black; 
+ }
+ 
+ h3 span {
+     background-color: rgb(84, 180, 24);
+     border-radius: 10%;
+ }
+ 
+ .thankyou-text {
+     border: 5px ridge black;
+ }
+ 
+ .buttons {
+     
+ }
+ 
+ 
+ .receipt-form button {
+     height: 50px;
+     width: 100px;
+     border-radius: 20px;
+     background-color: transparent;
+     font-size: x-large;
+     font-weight: 600;
+    
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
 
 .receipt-form {

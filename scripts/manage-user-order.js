@@ -35,9 +35,16 @@ order.cart.forEach(item => {
         "<table>" +
         "<tr>" +
         "<td class=\"item-name\">" + item.name + "</td>" +
-        "<td class=\"item-qty\"> Qty: " + item.price + "</td>" +
+        "<td class=\"item-qty\"> Qty: " + item.qty + "</td>" +
         "<td class=\"item-price\">Price: $" + item.price + "</td>" +
         "</tr>"
     "</table>";
     orderCartDiv.appendChild(itemElement);
 });
+
+let cartSumElement = document.createElement("div");
+cartSumElement.innerHTML =
+    "<p class=\"cart-sum\"><strong>Total:</strong> " + order.total + "</p>";
+
+orderCartDiv.appendChild(document.createElement("hr"));
+orderCartDiv.appendChild(cartSumElement);

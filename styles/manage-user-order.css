@@ -36,3 +36,61 @@ header>nav {
 .title {
     padding: 5px;
 }
+
+.order-info-section {
+    padding: 10px;
+    margin: 10px 1%;
+    background-color: rgb(225, 225, 225);
+}
+
+.flexable-spacebetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-payment-method {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.order-cart-wrapper {
+    width: 410px;
+    background-color: rgb(155, 155, 155);
+    padding: 5px;
+}
+
+.order-cart--title {
+    text-align: center;
+}
+
+.order-cart {
+    background-color: rgb(225, 225, 225);
+    overflow: scroll;
+    width: 400px;
+    height: fit-content;
+    max-height: 400px;
+}
+
+.order-cart:first-child {
+    margin-top: 5px;
+}
+
+.order-cart .order {
+    margin-bottom: 5px;
+}
+
+.order table {
+    width: 100%;
+}
+
+.item-name {
+    width: 50%;
+}
+
+.item-price {
+    width: 25%;
+}
+
+.item-price {
+    width: 25%;
+}

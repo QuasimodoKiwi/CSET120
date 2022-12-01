@@ -2,15 +2,47 @@ function redirectBack() {
     window.location = "./manage-users.html";
 }
 
-function banUser() {
+function updateBanStatusBtn() {
+    let statusBtn = document.getElementsByClassName("status-btn")[0];
+
+    let users = JSON.parse(localStorage.getItem("users"));
+    let user;
+    users.forEach(userInUsers => {
+        if (userInUsers.name == name) {
+            user = userInUsers;
+        }
+    });
+
+    statusBtn.classList.forEach(classInClassList => {
+        statusBtn.classList.remove(classInClassList);
+    });
+
+    if (user.status == "banned") {
+        statusBtn.classList.add("status-btn");
+        statusBtn.classList.add("status-btn--unban");
+        statusBtn.innerHTML = "Unban User"
+    } else {
+        statusBtn.classList.add("status-btn");
+        statusBtn.classList.add("status-btn--ban");
+        statusBtn.innerHTML = "Ban User"
+    }
+}
+
+function toggleBanStatus() {
     let name = sessionStorage.getItem("manageUser");
     let users = JSON.parse(localStorage.getItem("users"));
     users.forEach(user => {
         if (user.name === name) {
-            user.status = "banned";
+            if (user.status == "banned") {
+                user.status = "available";
+            } else {
+                user.status = "banned";
+            }
+            localStorage.setItem("users", JSON.stringify(users));
+            updateBanStatusBtn();
         }
     });
-    alert("User has been banned");
+    alert("User's ban status has been updated");
 }
 
 let name = sessionStorage.getItem("manageUser");
@@ -41,7 +73,7 @@ document.getElementsByClassName("is-manager")[0].innerHTML = (user.isManager != 
 
 // ============ Address ================
 document.getElementsByClassName("address-row-1")[0].innerHTML = (user.address != undefined && user.address.address != undefined) ? user.address.address : "Not set yet...";
-document.getElementsByClassName("address-row-2")[0].innerHTML = (user.address != undefined && user.address.city != undefined && user.address.state != undefined && user.address.zipCode != undefined) ? user.address.city + ", " + user.address.state + " " + user.zipCode : "Not set yet...";
+document.getElementsByClassName("address-row-2")[0].innerHTML = (user.address != undefined && user.address.city != undefined && user.address.state != undefined && user.address.zipCode != undefined) ? user.address.city + ", " + user.address.state + " " + user.address.zipCode : "Not set yet...";
 
 // ========= Order History ===============
 let orderHistoryList = document.getElementsByClassName("orders")[0];
@@ -81,17 +113,6 @@ if (orderHistory != undefined) {
 }
 
 // ======= Ban Button ============
-document.getElementsByClassName("ban-btn")[0].addEventListener('click', banUser, false);
-
-// let users = JSON.parse(localStorage.getItem("usersTest"));
-// for (let i = 0; i < usersTest.length; i++) {
-//     user = usersTest[i];
-//     if (inputEmail == user.emaail && inputPassword == user.password) {
-//         sessionStorage.setItem("loggedInUser", user.name);
-//         if (user.isManager) {
-//             window.location = "./manager-page.html";
-//         } else {
-//             window.location = "./profile-page.html";
-//         }
-//     }
-// }
+let statusBtn = document.getElementsByClassName("status-btn")[0];
+statusBtn.addEventListener('click', toggleBanStatus, false);
+updateBanStatusBtn();

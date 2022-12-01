@@ -84,18 +84,21 @@ header>nav {
     color: rgb(65, 65, 65);
 }
 
-.address-row {
-    color: rgb(65, 65, 65);
-}
-
 .ban-btn-sect {
     margin: 5px;
 }
 
-.ban-btn {
+.status-btn {
     padding: 10px;
     font-size: 2em;
-    background-color: rgb(225, 0, 0);
     border-radius: 10px;
     color: black;
+}
+
+.status-btn--ban {
+    background-color: red;
+}
+
+.status-btn--unban {
+    background-color: green;
 }

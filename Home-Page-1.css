@@ -36,12 +36,15 @@
 .sign-up-in {
     width: 100%;
     text-align: right;
+    padding-top: 2%;
+    
 }
 
 .sign-up-in a {
     text-decoration: none;
     color: white;
     font-size: 45px;
+    padding: 3%;
 }
 
 
@@ -203,15 +206,16 @@ nav {
     font-size: 40px;
     font-weight: bold;
     background-color:transparent;
-    
+    transition: 4.2s;
 
 }
 
-
+.plot-row-right button:hover {
+    background-color: chartreuse;
+}
 
 
 .plot-row-right button a {
-    
     color: rgb(0, 0, 0);
 }
 

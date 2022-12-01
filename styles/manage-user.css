@@ -74,6 +74,10 @@ header>nav {
     justify-content: space-between;
 }
 
+.order-date {
+    margin-right: 10px;
+}
+
 .order-details {
     position: absolute;
     top: calc();

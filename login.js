@@ -30,44 +30,64 @@ function signup(){
 
 //Forgot Password Steps:
 
-//1: Create a label and button.
+//1: 
+// Change the "Login" <h3> element to "Change Password:", the innerHTML of label for password to "New Password:".
+// (optional) change the innerHTML of the Submit button to "Save Password".
+//2:
+//Upon clicking the confirmation button, check if a user's email exists within the local storage. 
+//If the email does exist... 
+    //the user is eligible to create a new password that will replace the value of password inside the users key.
 
-//2: Put in a input box and check if a user's email exists within the local storage. 
+    //If the following two were to happen, set the display of the warningText div to visible, and...
 
-//3: If the email does exist, enter an input box that allows for a new password to be created.
+    //... if the password exists, change its innerHTML to "The password already exists. Please try again."
+    
+    //or if the email does NOT exist, change innerHTML to "The email does not exist."
 
-//4: When iterated, create a new element for the label and the textbox using document.body.createElement.
-//Replace the class of the loginInput with the new label and textbox
+    //or, The email nor the password exists. 
 
-//5: Create a confirmation button...
+//3: 
+//When iterated, create a new element for the label and the textbox using document.body.createElement.
 
-//6: If the confirmation button is clicked, set the items of the user to have the new password.
+//6: 
+//If the confirmation button is clicked, set the items of the user to have the new password.
 
-//7: Reload the page when finished.
+//7: 
+//Reload the page when finished.
 
 function newPassword(){
-    let newLabel = document.createElement("label");
-    newLabel.innerHTML = "form";
+    let currentUser = inputEmail;
     
-    let newPassword = document.createElement("input");
-    newPassword.setAttribute("type", "text");
-
-
-    // document.getElementsByClassName("loginInput").createElement = "label";
+    document.getElementById("passwordLabel").innerHTML = "New Password: ";
     
-    let users = JSON.parse(localStorage.getItem("users"));
-    for(let i = 0; i < users.length; i++){
-        if(inputEmail == users.email){
-            let targets = document.getElementsByClassName("loginInput");
-            targets.forEach(box => {
-                box.remove();
-            });
+    let warningMessage = document.getElementById("warningText");
+ 
+    let confirmationButton = document.getElementById("submit");
+    confirmationButton.innerHTML = "Save Password";
 
-        }
-        else{
-            alert("The email was not found. Please try again.");
-        }
-       }
+    confirmationButton.addEventListener("click", passwordCreation());
 
-    document.body.append(newLabel, newPassword);
+
+    function passwordCreation(){
+        let users = JSON.parse(localStorage.getItem("users"));
+        for(let i = 0; i < users.length; i++){
+            let user = users[i];
+            if(inputEmail == user.email  && inputPassword != user.password ){
+                localStorage.setItem(email, JSON.stringify(user.password));     
+                document.getElementById("warningText").style.color = "black";
+                document.getElementById("warningText").innerHTML = "Password saved."
+                location.reload;
+            }
+            else if(inputEmail != user.email){
+                document.getElementById("warningText").style.display = "block";
+                document.getElementById("warningText").innerHTML = "The email does not exist."
+            }
+            else if(inputPassword == user.password){
+                document.getElementById("warningText").style.display = "block"; 
+                document.getElementById("warningText").innerHTML = "The password already exists."
+            }
+        }
+    }
+
+
 }

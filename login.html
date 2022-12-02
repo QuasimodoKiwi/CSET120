@@ -4,7 +4,6 @@
     <head>
         <title>Login Page!</title>
         <link rel="stylesheet" href="login.css">
-        <script src="login.js"></script>
     </head>
     <body>
         <header><h1>Login Page</h1></header>
@@ -14,14 +13,14 @@
                     <h3>Login</h3>
                 </div>
                 
-                <div id="email">
+                <div>
                     <label for="email">Email:</label>
                     <input type="text" name="email" id="email">
                 </div>
                 
-                <div id = "password">
+                <div>
                     <label id="passwordLabel" for="password">Password:</label>
-                    <input type="text" name="password" id="password">
+                    <input type="password" name="password" id="password">
                 </div>
                 <button id="submit" onclick="login()">Submit</button>
                 
@@ -37,5 +36,6 @@
                 </div>
             </div>
         </section>
+        <script src="login.js"></script>
     </body>
-</html>
+    </html>

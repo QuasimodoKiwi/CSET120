@@ -4,10 +4,10 @@
 
 //Use session storage!!
 
-let inputEmail = document.getElementById("email").value;
-let inputPassword = document.getElementById("password").value;
 
 function login(){
+    let inputEmail = document.getElementById("email").value;
+    let inputPassword = document.getElementById("password").value;
 
     let users = JSON.parse(localStorage.getItem("users"));
     for(let i = 0; i < users.length; i++){
@@ -56,38 +56,45 @@ function signup(){
 //Reload the page when finished.
 
 function newPassword(){
-    let currentUser = inputEmail;
-    
     document.getElementById("passwordLabel").innerHTML = "New Password: ";
     
-    let warningMessage = document.getElementById("warningText");
- 
+    
     let confirmationButton = document.getElementById("submit");
-    confirmationButton.innerHTML = "Save Password";
+    confirmationButton.innerHTML = "Confirm Password";
+    confirmationButton.setAttribute("onclick", "");
+    confirmationButton.addEventListener("click", passwordCreation);
+}
+function passwordCreation(){
+    let inputEmail = document.getElementById("email").value;
+    let inputPassword = document.getElementById("password").value;
+    let warningMessage = document.getElementById("warningText");
+    let users = JSON.parse(localStorage.getItem("users"));
+    
+    let userExists = false;
+    for(let i = 0; i < users.length; i++){
 
-    confirmationButton.addEventListener("click", passwordCreation());
-
-
-    function passwordCreation(){
-        let users = JSON.parse(localStorage.getItem("users"));
-        for(let i = 0; i < users.length; i++){
-            let user = users[i];
-            if(inputEmail == user.email  && inputPassword != user.password ){
-                localStorage.setItem(email, JSON.stringify(user.password));     
-                document.getElementById("warningText").style.color = "black";
-                document.getElementById("warningText").innerHTML = "Password saved."
-                location.reload;
+        let user = users[i];
+        console.log(user.password);
+        console.log(inputPassword);
+        if(user.email == inputEmail){
+            userExists = true;
+            if(inputPassword != user.password){
+                user.password = inputPassword;
+                users[i] = user;
+                localStorage.setItem("users", JSON.stringify(users));
+                warningMessage.style.display = "block";
+                warningMessage.style.color = "black";
+                warningMessage.innerHTML = "Password saved.";
             }
-            else if(inputEmail != user.email){
-                document.getElementById("warningText").style.display = "block";
-                document.getElementById("warningText").innerHTML = "The email does not exist."
-            }
-            else if(inputPassword == user.password){
-                document.getElementById("warningText").style.display = "block"; 
-                document.getElementById("warningText").innerHTML = "The password already exists."
+            else{
+                warningMessage.style.display = "block"; 
+                warningMessage.innerHTML = "The password already exists.";
+                return;
             }
         }
+            }
+            if(!userExists){
+            warningMessage.style.display = "block";
+            warningMessage.innerHTML = "The email does not exist.";
     }
-
-
 }

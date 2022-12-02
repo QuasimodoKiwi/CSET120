@@ -7,7 +7,7 @@
 /* header NAV */
 .main-header {
     padding: 100px;
-    background-image: url("../assets/Images/chicken\ smoke.gif");
+    background-image: url("../assets/images/chicken\ smoke.gif");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,7 +46,7 @@
     padding: 10px 1%;
     width: 75%;
     display: flex;
-    text-align: center;
+    flex-wrap: wrap;
     margin-top: 40px;
 }
 
@@ -56,18 +56,46 @@
     padding: 10px;
     margin: 0 0.33% 10px;
     width: 24%;
-    height: 300px;
     overflow: hidden;
 }
 
-.shop-item-details {
+.shop-item-title {
     text-align: center;
+}
+
+.shop-item-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-item-price-and-add-to-cart {
+    margin-left: 3px;
+    padding-left: 3px;
+    border-left: 1px solid rgb(166, 166, 166);
+    width: 25%;
+    text-align: center;
+}
+
+.shop-item-description-and-allergies {
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-item-price {
+    font-size: 1.25em;
+    font-weight: 900;
 }
 
 .shop-item-image {
     margin-bottom: 20px;
     display: block;
-    margin: 10px auto;
+    margin: 5px auto;
     height: 200px;
     width: 100%;
 }
+
+.cart-table {
+    width: 100%;
+}
+
+.cart-item {}

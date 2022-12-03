@@ -7,7 +7,6 @@
     <title>Chicken Checkout | Menu</title>
     <meta name="description" content="This is the description">
     <link rel="stylesheet" href="./styles/Menu-2.0.css" />
-    <script src="./Menu-2.0.js" async></script>
 </head>
 
 <body>
@@ -23,14 +22,16 @@
 
 
     <section class="cart">
-        <h2 class="section-header">CART</h2>
+        <h2 class="cart-display">CART</h2>
         <table class="cart-table">
             <tr>
+                <th class="cart-remove-btn"></th>
                 <th class="cart-table-item">Item</th>
                 <th class="cart-table-price">Price</th>
                 <th class="cart-table-qty">Quantity</th>
             </tr>
         </table>
+        <h2 class="cart-total">$</h2>
 
         <!-- <div class="cart-row">
             <span class="cart-item cart-header cart-column">ITEM</span>
@@ -50,6 +51,11 @@
     <section class="content-section"></section>
 
     <footer class="main-footer"></footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="./Menu-2.0.js"></script>
 </body>
 
 </html>

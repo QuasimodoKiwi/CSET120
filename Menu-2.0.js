@@ -62,7 +62,7 @@ function ready() {
             "<button class=\"btn btn-primary shop-item-button\" type=\"button\" onclick=\"addToCartClicked(this)\"> ADD TO CART</button>" +
             "</div>" +
             "</div>";
-        document.getElementsByClassName("content-section")[0].appendChild(itemElement);
+        document.getElementsByClassName("menu-items")[0].appendChild(itemElement);
     });
 
     // document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
@@ -190,7 +190,7 @@ function updateCart() {
             "<img src=\"./assets/images/inventory/" + item.img + "\" class=\"cart-img\">" +
             "</div>" +
             "</td>" +
-            "<td>$" + item.price.toFixed(2) + "</td>" +
+            "<td class=\"cart-price\">$" + item.price.toFixed(2) + "</td>" +
             "<td>" +
             "<input type=\"number\" min=\"1\" value=\"" + cartItem.qty + "\" class=\"cart-qty-input\" onclick=\"quantityChange(this)\">" +
             "</td>";
@@ -208,4 +208,8 @@ function updateCart() {
         total += item.price * cartItem.qty;
     });
     document.getElementsByClassName("cart-total")[0].innerHTML = "TOTAL: $" + total.toFixed(2);
+}
+
+function proceedToCheckout() {
+    window.location = "./checkout.html";
 }

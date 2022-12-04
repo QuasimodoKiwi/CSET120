@@ -43,12 +43,16 @@
     float: right;
     width: 25%;
     /* background-color: blueviolet; */
+
 }
 
 /* Body Plot */
+.menu-display {
+    text-align: center;
+}
 
-.content-section {
-    padding: 0 1%;
+.menu-items {
+    margin-top: 20px;
     width: 75%;
     display: flex;
     flex-wrap: wrap;
@@ -105,6 +109,7 @@
 .cart-table {
     margin-top: 20px;
     width: 100%;
+    border-collapse: collapse;
 }
 
 .cart-remove-btn {
@@ -117,10 +122,12 @@
 
 .cart-table-price {
     width: 15%;
+    text-align: left;
 }
 
 .cart-table-qty {
     width: 20%;
+    text-align: left;
 }
 
 .cart-table th,
@@ -136,7 +143,9 @@
     width: 100%;
     height: 100%;
     padding: 2px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .trash-icon {
@@ -157,12 +166,24 @@
     height: 100px;
 }
 
+.cart-price {
+    font-size: 1.15em;
+}
+
 .cart-qty-input {
     width: 100%;
+    font-size: 1.15em;
 }
 
 .cart-total-proceed-btn {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 10px;
+}
+
+.proceed-btn {
+    padding: 5px 30px;
+    font-size: 1.15em;
+    background-color: yellow;
 }

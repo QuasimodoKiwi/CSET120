@@ -374,7 +374,7 @@ nav {
         /* margin-top: 25%; */
         font-weight: 400px;
         font-size: 20px;
-        margin: 60px;
+        margin: 40px;
         
     
     }
@@ -386,7 +386,7 @@ nav {
         border: none;
         height: 400px;   
         overflow: scroll;
-        font-size: large;
+        font-size: 20px;
         font-weight: 700;
     }
 
@@ -413,6 +413,15 @@ nav {
               width: 300px;
               
     }
+
+    .plot-row-1 { 
+    height: 600px;
+    margin: 10px;
+    }
+
+
+
+
 
 }
 

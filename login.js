@@ -14,13 +14,17 @@ function login(){
         let user = users[i]; 
         if(inputEmail == user.email && inputPassword == user.password){
             sessionStorage.setItem("loggedUser", user.name);
+            
+            console.log(user.isManager);
+            
             if(user.isManager){
                 window.location = "./manager-page.html";
+                return;
             }
             else{
                 window.location = "./profile-page.html";
+                return;
             }
-            return;
         }
         else{
             alert("Your username or password was invalid.");

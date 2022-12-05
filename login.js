@@ -1,36 +1,41 @@
-//user gets sent to either their profile page or the management page
-//Also include a link to the sign-up page if the user is directed here somehow
-//use an if-statement for the authentication by checking local storage for matches
-
-//Use session storage!!
-
-
 function login(){
     let inputEmail = document.getElementById("email").value;
     let inputPassword = document.getElementById("password").value;
 
     let users = JSON.parse(localStorage.getItem("users"));
+    
+    let userEmails = [];
+    
+    for(let i = 0; i < users.length; i++){
+        let user = users[i];
+        userEmails.push(user.email);
+    }
+    
     for(let i = 0; i < users.length; i++){
         let user = users[i]; 
-        if(inputEmail == user.email && inputPassword == user.password){
-            sessionStorage.setItem("loggedUser", user.name);
-            
-            console.log(user.isManager);
-            
-            if(user.isManager){
-                window.location = "./manager-page.html";
-                return;
-            }
-            else{
-                window.location = "./profile-page.html";
-                return;
-            }
-        }
-        else{
-            alert("Your username or password was invalid.");
+        
+        if(!userEmails.includes(user.email)){
+            alert("email does not exist.");
             return;
         }
+        else{
+            if(inputEmail == user.email && inputPassword == user.password){
+                sessionStorage.setItem("loggedUser", user.name);
+                
+                
+                if(user.isManager){
+                    window.location = "./manager-page.html";
+                    return;
+                }
+                else{
+                    window.location = "./profile-page.html";
+                    return;
+                }
+            }    
+        }
+
     }    
+    alert("The user nor the email matches.");
 }
 
 function signup(){
@@ -54,10 +59,8 @@ function passwordCreation(){
     
     let userExists = false;
     for(let i = 0; i < users.length; i++){
-
+        
         let user = users[i];
-        console.log(user.password);
-        console.log(inputPassword);
         if(user.email == inputEmail){
             userExists = true;
             if(inputPassword != user.password){
@@ -67,6 +70,8 @@ function passwordCreation(){
                 warningMessage.style.display = "block";
                 warningMessage.style.color = "black";
                 warningMessage.innerHTML = "Password saved.";
+                alert("Password saved.");
+                location.reload();
             }
             else{
                 warningMessage.style.display = "block"; 

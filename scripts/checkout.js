@@ -8,12 +8,13 @@ function getUsers() {
 
 function getUser() {
     let users = getUsers();
+    let user = null;
     users.forEach(userInUsers => {
         if (userInUsers.name == getLoggedUser()) {
-            return userInUsers;
+            user = userInUsers;
         }
     });
-    return null;
+    return user;
 }
 
 function getInventory() {
@@ -37,14 +38,34 @@ function getInventory() {
 
 
 function main() {
-    let users = getUsers();
     let user = getUser();
+
     let cart = user.cart;
-
     for (i = 0; i < cart.length; i++) {
-        let item = cart[i];
-        let cartItemElement = document.createElement("tr");
+        let cartItem = cart[i];
 
+        let item = null;
+        let items = getInventory();
+        items.forEach(itemInInventory => {
+            if (itemInInventory.name == cartItem.name) {
+                item = itemInInventory;
+            }
+        });
+
+        let cartItemElement = document.createElement("tr");
+        cartItemElement.classList.add("cart-item");
+        cartItemElement.innerHTML =
+            "<td class=\"item-img-title\">" +
+            "<h3 class=\"item-name\">" + item.name + "</h3>" +
+            "<img src=\"./assets/images/inventory/" + item.img + "\" class=\"item-img\">" +
+            "</td>" +
+            "</td>" +
+            "<td class=\"item-price\">$" + item.price.toFixed(2) + "</td>" +
+            "<td>" +
+            "<p class=\"item-qty\">" + cartItem.qty + "</p>" +
+            "</td>";
+
+        document.getElementsByClassName("cart-table")[0].appendChild(cartItemElement);
     }
 }
 

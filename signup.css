@@ -37,6 +37,12 @@ body{
     align-items: flex-end;
 }
 
+#manager{
+    width: 20px;
+    height: 20px;
+    margin-right: 250px;
+}
+
 #submitButton{
     display: flex;
     width: 100px;

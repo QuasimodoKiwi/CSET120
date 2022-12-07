@@ -15,7 +15,8 @@
     <header></header>
 
     <section class="main-content">
-        <div class="cart-overview">
+        <div class="cart-overview content-blob">
+            <h2 class="content-blob--title">Cart</h2>
             <table class="cart-table">
                 <tr>
                     <th>Item</th>
@@ -23,6 +24,47 @@
                     <th>Qty</th>
                 </tr>
             </table>
+            <h2 class="cart-total"></h2>
+        </div>
+
+        <div class="payment-overview content-blob">
+            <form>
+                <p>Cash or Card</p>
+                <label for="payment-type--card">Card</label>
+                <input type="radio" name="payment-type" id="payment-type--card" onchange="updatePaymentType()">
+                <label for="payment-type--cash">Cash</label>
+                <input type="radio" name="payment-type" id="payment-type--cash" onchange="updatePaymentType()">
+                <div class="card-list">
+                </div>
+                <div class="card-section">
+                    <form>
+                        <label for="card-type">Card Type:</label>
+                        <input type="text" name="card-type" id="card-type-ipnut" placeholder="ex. Master">
+                        <br>
+
+                        <label for="card-number">Card Number:</label>
+                        <input type="text" name="card-number" id="card-number-input" placeholder="xxxxxxxxxxxxxx">
+                        <br>
+
+                        <label for="card-cvv">CVV:</label>
+                        <input type="text" name="card-cvv" id="card-cvv-input" placeholder="xxx">
+                        <br>
+
+                        <label for="card-expiration">Expiration Date:</label>
+                        <input type="text" name="card-expiration" id="card-expiration-input" placeholder="mm/yy">
+                        <br>
+
+                        <label for="card-name">Name on Card:</label>
+                        <input type="card-name" name="card-name" id="card-name-input"
+                            placeholder="First Name Last Name">
+                        <br>
+                    </form>
+                </div>
+            </form>
+        </div>
+
+        <div class="purchase-btn-div content-blob">
+            <button class="purchase-btn" onclick="purchase()">Purchase</button>
         </div>
     </section>
 

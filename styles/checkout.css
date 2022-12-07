@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+.content-blob {
+    padding: 10px;
+    margin: 5px;
+    width: fit-content;
+    background-color: antiquewhite;
+}
+
+.content-blob--title {
+    text-align: center;
+}
+
 .cart-table {
     border-collapse: collapse;
 }
@@ -17,8 +28,18 @@
     padding: 10px;
 }
 
+.item-img-title {
+    text-align: center;
+}
+
 .item-img {
     width: 200px;
     height: 100px;
     display: block;
 }
+
+.cart-total {
+    text-align: right;
+}
+
+.card-section {}

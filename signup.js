@@ -37,5 +37,11 @@ function createUser(){
     
     localStorage.setItem("users", JSON.stringify(users));    
     
-    console.log(JSON.parse(localStorage.getItem("users")));
+    // console.log(JSON.parse(localStorage.getItem("users")));
+    alert(`Welcome to the family, ${JSON.stringify(users)}!`);
+
+}
+
+function link(){
+    window.location()
 }

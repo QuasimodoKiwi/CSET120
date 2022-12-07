@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-body{
-    background-image: url("plaid-wallpaper.jpg");
-}
-
 .title{
     text-align: center;
     background-color: white;
@@ -15,32 +11,60 @@ body{
 }
 
 .info-container{
-    border: 5px solid orange;
-    background-color: aliceblue;
-    width: 50%;
-    height: 300pt;
-    margin: 0 auto;
-    margin-top: 100px;
-    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
 }
 
+.info-container button{
+    margin-top: 50px;
+    padding: 10pt;
+    font-size: 20pt;
+}
+
+.image-div{
+    background-image: url("assets/images/grill.gif");
+    width: 50%;
+    height: inherit;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
 .info-wrapper{
+    background-image: url("assets/images/plaid-wallpaper.jpg");
     display: flex;
+    height: inherit;
+    width: 50%;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 90px;
 }
 
 .info-format{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    padding: 50px;
 }
+.info-input{
+    background-color: aliceblue;
+    height: 100%;
+    width: 100%;
+}
+
 
 #manager{
     width: 20px;
     height: 20px;
     margin-right: 250px;
+}
+
+#log-link{
+    width: 20px;
 }
 
 #submitButton{
@@ -57,10 +81,4 @@ body{
 input{
     width: 200pt;
     margin: 20px 0 0 20px; 
-}
-
-.info-container button{
-    margin-top: 50px;
-    padding: 10pt;
-    font-size: 20pt;
 }

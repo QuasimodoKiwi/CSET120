@@ -6,50 +6,45 @@
         <script src="signup.js"></script>
     </head>
     <body>
-        <div class="title">
-            <h1>Signup Placeholder Text</h1>
-        </div>
+        <!-- <div class="title"><h1>Signup Page</h1></div> -->
         <section class="info-container">
-            <form onsubmit= "createUser()">
-                <div class="info-wrapper">
-                    <div class="info-input">
-                        <div class="info-format">
-                            <div>
-                                <label for="fname">First name:</label>
-                                <input type="text" name="fname" id="fname">
-                            </div>
-                            
-                            <div>
-                                <label for="lname">Last name:</label>
-                                <input type="text" name="lname" id="lname">
-                            </div>
-                            
-                            <div>
-                                <label for="email">Email Address:</label>
-                                <input type="email" name="email" id="email">
-                            </div>
-                            
-                            <div>
-                                <label for="password">Password:</label>
-                                <input type="text" name="password" id="password">
-                            </div>
-
-                            <div>
-                                <label for="manager">Manager:</label>
-                                <input type="checkbox" name="manager" id="manager">
-                            </div>
-
-                            <div>
-                                <label for="log-link">To Login Page</label>
-                                <input type="button" name="log-link" id="log-link">
+            <div class="image-div">
+            </div>
+            <div class="info-wrapper">
+                <form onsubmit= "createUser()">
+                        <div class="info-input">
+                            <div class="info-format">
+                                <div>
+                                    <label for="fname">First name:</label>
+                                    <input type="text" name="fname" id="fname">
+                                </div>
                                 
-                            </div>
-
+                                <div>
+                                    <label for="lname">Last name:</label>
+                                    <input type="text" name="lname" id="lname">
+                                </div>
+                                
+                                <div>
+                                    <label for="email">Email Address:</label>
+                                    <input type="email" name="email" id="email">
+                                </div>
+                                
+                                <div>
+                                    <label for="password">Password:</label>
+                                    <input type="text" name="password" id="password">
+                                </div>
+                                
+                                <div>
+                                    <label for="manager">Manager:</label>
+                                    <input type="checkbox" name="manager" id="manager">
+                                </div>
+                                
+                                <input id="submitButton" type="submit"></button>
+                                <a href="login-page.html">To Login Page</a>    
                         </div>
                     </div>
-                </div>
-                <input id="submitButton" type="submit"></button>
-            </form>
+                </form>
+            </div>
         </section>
     </body>
 </html>

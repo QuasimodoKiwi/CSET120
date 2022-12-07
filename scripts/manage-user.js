@@ -71,10 +71,6 @@ document.getElementsByClassName("last-name")[0].innerHTML = user.lastName;
 document.getElementsByClassName("email")[0].innerHTML = user.email;
 document.getElementsByClassName("is-manager")[0].innerHTML = (user.isManager != undefined ? user.isManager : false) == true ? "Yes" : "No";
 
-// ============ Address ================
-document.getElementsByClassName("address-row-1")[0].innerHTML = (user.address != undefined && user.address.address != undefined) ? user.address.address : "Not set yet...";
-document.getElementsByClassName("address-row-2")[0].innerHTML = (user.address != undefined && user.address.city != undefined && user.address.state != undefined && user.address.zipCode != undefined) ? user.address.city + ", " + user.address.state + " " + user.address.zipCode : "Not set yet...";
-
 // ========= Order History ===============
 let orderHistoryList = document.getElementsByClassName("orders")[0];
 let orderHistory = user.orderHistory;

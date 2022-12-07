@@ -19,8 +19,8 @@ user.orderHistory.forEach(orderInHistory => {
 document.getElementsByClassName("order-name")[0].innerHTML = user.firstName + " " + user.lastName;
 document.getElementsByClassName("order-address")[0].innerHTML =
     "<div class=\"address-rows\">" +
-    "<p>" + user.address.address + "</p>" +
-    "<p>" + user.address.city + ", " + user.address.state + " " + user.address.zipCode + "</p>" +
+    "<p>" + order.address.address + "</p>" +
+    "<p>" + order.address.city + ", " + order.address.state + " " + order.address.zipCode + "</p>" +
     "</div>";
 document.getElementsByClassName("order-date")[0].innerHTML = order.date;
 document.getElementsByClassName("order-total")[0].innerHTML += order.total;

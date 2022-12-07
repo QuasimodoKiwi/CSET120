@@ -78,7 +78,27 @@ function updatePaymentType() {
     }
 }
 
-function purchase() { //TODO: don't let the user purchase unless the card info is present.
+function purchase() {
+    if ((!document.getElementById("payment-type--card").checked &&
+        !document.getElementById("payment-type--cash").checked) ||
+        (document.getElementById("address").value == "" ||
+            document.getElementById("city").value == "" ||
+            document.getElementById("state").value == "" ||
+            document.getElementById("zipCode").value == "")) {
+        alert("Please fill out the forms before purchasing!");
+        return;
+    }
+
+    if (document.getElementById("payment-type--card").checked &&
+        (document.getElementById("card-type-input").value == "" ||
+            document.getElementById("card-number-input").value == "" ||
+            document.getElementById("card-cvv-input").value == "" ||
+            document.getElementById("card-expiration-input").value == "" ||
+            document.getElementById("card-name-input").value == "")) {
+        alert("Please fill out the forms before purchasing!");
+        return;
+    }
+
     let user = getUser();
 
     let order = {};
@@ -111,6 +131,7 @@ function purchase() { //TODO: don't let the user purchase unless the card info i
 
     user.orderHistory.push(order);
     setUser(user);
+    window.location = "recipt-page.html";
 }
 
 function main() {

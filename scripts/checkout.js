@@ -88,7 +88,7 @@ function purchase() { //TODO: don't let the user purchase unless the card info i
     }
     let current = new Date();
     order.date = current.getMonth() + "/" + current.getDay() + "/" + current.getFullYear() + "@" + current.getHours() + ":" + current.getMinutes();
-    order.total = total.toFixed(2);
+    order.total = parseInt(total).toFixed(2);
     order.paymentMethod = document.getElementById("payment-type--card").checked ? (
         "card(" + document.getElementById("card-number-input").value + ")"
     ) : "cash";
@@ -102,6 +102,12 @@ function purchase() { //TODO: don't let the user purchase unless the card info i
         });
         cartItem.price = currentPrice.toFixed(2);
     });
+
+    order.address = {};
+    order.address.address = document.getElementById("address").value;
+    order.address.city = document.getElementById("city").value;
+    order.address.state = document.getElementById("state").value;
+    order.address.zipCode = document.getElementById("zipCode").value;
 
     user.orderHistory.push(order);
     setUser(user);

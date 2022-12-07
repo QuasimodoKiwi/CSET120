@@ -18,6 +18,12 @@ function login(){
             alert("email does not exist.");
             return;
         }
+
+        else if(user.status == "banned"){
+            alert("Your account is banned.");
+            return;
+        }
+
         else{
             if(inputEmail == user.email && inputPassword == user.password){
                 sessionStorage.setItem("loggedUser", user.name);

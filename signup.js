@@ -4,7 +4,8 @@ function createUser(){
         lastName: document.getElementById("lname").value,
         email: document.getElementById("email").value,
         password: document.getElementById("password").value,
-        isManager: false
+        isManager: false,
+        status: "available"
     };
     
     

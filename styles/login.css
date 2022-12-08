@@ -1,23 +1,23 @@
 /* Make your login page more unique! Don't make it too identical to your signup page! */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-image: url("countryside.jpg");
+body {
+    background-image: url("../assets/images/login/countryside.jpg");
     background-size: cover;
 }
 
-header{
+header {
     display: flex;
     justify-content: center;
     border: 5px solid black;
 }
 
-.login-container{
+.login-container {
     width: 700px;
     height: 300px;
     padding-left: 100px;
@@ -27,18 +27,17 @@ header{
     border-radius: 25px;
 }
 
-.loginInput{
+.loginInput {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    height: inherit;    
+    height: inherit;
     padding: 80px;
 }
 
-.other-inputs{
+.other-inputs {
     margin-bottom: 100px;
     display: block;
     justify-content: center;
 }
-

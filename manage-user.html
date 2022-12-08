@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Checkout | Manage User</title>
+    <link rel="stylesheet" href="./styles/manage-user.css">
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <li>
+                <ion-icon class="back-icon" name="arrow-back-outline"></ion-icon>
+                <a href="./manage-users.html">Manage Users</a>
+            </li>
+        </nav>
+
+        <h2 class="title">Manage User: </h2>
+
+    </header>
+
+    <section class="user-view">
+        <section class="general-info blob">
+            <h3 class="blob--title">General Info</h3>
+            <p class="blob--info">First name: <span class="first-name"></span></p>
+            <p class="blob--info">Last name: <span class="last-name"></span></p>
+            <p class="blob--info">Email: <span class="email"></span></p>
+            <p class="blob--info">Is a manager: <span class="is-manager"></span></p>
+        </section>
+
+        <section class="order-history blob">
+            <h3 class="blob--title">Order History</h3>
+            <div class="orders"></div>
+        </section>
+
+        <section class="status-btn-sect">
+            <button class="status-btn"></button>
+        </section>
+    </section>
+
+    <div class="order-details">
+
+    </div>
+
+    <script src="./scripts/manage-user.js"></script>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

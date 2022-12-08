@@ -4,9 +4,14 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow: hidden;
+}
+
 .title{
     text-align: center;
-    background-color: white;
+    background-color: black;
+    color: white;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -26,9 +31,7 @@
 .image-div{
     background-image: url("assets/images/grill.gif");
     width: 50%;
-    height: inherit;
     background-color: black;
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -41,7 +44,7 @@
     width: 50%;
     flex-direction: column;
     align-items: center;
-    padding: 90px;
+    padding: 50px;
 }
 
 .info-format{

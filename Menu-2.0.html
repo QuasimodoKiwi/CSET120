@@ -1,0 +1,54 @@
+<!-- lorenzo Smith -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chicken Checkout | Menu</title>
+    <meta name="description" content="This is the description">
+    <link rel="stylesheet" href="./styles/Menu-2.0.css" />
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-nav nav">
+
+            <a href="index.html">HOME</a></li>
+            <a href="profile.html">PROFILE</a></li>
+
+        </nav>
+        <h1 class="band-name band-name-large">Chicken Checkout</h1>
+    </header>
+
+    <section class="main-content">
+        <section class="cart">
+            <h2 class="cart-display">CART</h2>
+            <table class="cart-table">
+                <tr>
+                    <th class="cart-remove-btn"></th>
+                    <th class="cart-table-item">Item</th>
+                    <th class="cart-table-price">Price</th>
+                    <th class="cart-table-qty">Quantity</th>
+                </tr>
+            </table>
+            <div class="cart-total-proceed-btn">
+                <h2 class="cart-total"></h2>
+                <button class="proceed-btn" onclick="proceedToCheckout()">Checkout</button>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="menu-display">MENU</h2>
+            <div class="menu-items"></div>
+        </section>
+    </section>
+
+    <footer class="main-footer"></footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="./scripts/Menu-2.0.js"></script>
+</body>
+
+</html>

@@ -129,9 +129,11 @@ function purchase() {
     order.address.state = document.getElementById("state").value;
     order.address.zipCode = document.getElementById("zipCode").value;
 
+    if (user.orderHistory == undefined) user.orderHistory = [];
     user.orderHistory.push(order);
+    user.cart = [];
     setUser(user);
-    window.location = "recipt-page.html";
+    window.location = "./receipt-page.html";
 }
 
 function main() {

@@ -105,6 +105,10 @@ nav {
     margin: 0 10px 10px 0;
 }
 
+.order-history--title {
+    text-align: center;
+}
+
 
 @media only screen and (max-width:768px) {
 

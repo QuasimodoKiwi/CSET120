@@ -130,7 +130,7 @@ function purchase() {
     order.address.zipCode = document.getElementById("zipCode").value;
 
     if (user.orderHistory == undefined) user.orderHistory = [];
-    user.orderHistory.push(order);
+    user.orderHistory.unshift(order);
     user.cart = [];
     setUser(user);
     window.location = "./receipt-page.html";

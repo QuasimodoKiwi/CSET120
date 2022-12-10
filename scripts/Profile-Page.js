@@ -25,6 +25,6 @@ user.orderHistory.forEach(orderHistoryEntry => {
     orderHistoryItem.classList.add("order-history--item");
     orderHistoryItem.innerHTML =
         "<p class=\"date\">Date: " + orderHistoryEntry.date + "</p>" +
-        "<p class=\"total\">Total: " + orderHistoryEntry.total + "</p>";
+        "<p class=\"total\">Total: $" + orderHistoryEntry.total + "</p>";
     orderHistoryList.appendChild(orderHistoryItem);
 });

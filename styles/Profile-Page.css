@@ -103,6 +103,8 @@ nav {
     flex: 0 1 400px;
     padding: 5px;
     margin: 0 10px 10px 0;
+    min-height: 500px;
+    overflow: scroll;
 }
 
 .order-history--title {

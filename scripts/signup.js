@@ -40,7 +40,6 @@ function createUser() {
 
     // console.log(JSON.parse(localStorage.getItem("users")));
     alert(`Welcome to the family, ${userInfo.firstName}!`);
-
 }
 
 function link() {

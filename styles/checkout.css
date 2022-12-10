@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content-blob {
+    padding: 10px;
+    margin: 5px;
+    width: fit-content;
+    background-color: antiquewhite;
+}
+
+.content-blob--title {
+    text-align: center;
+}
+
+.cart-table {
+    border-collapse: collapse;
+}
+
+.cart-table th,
+.cart-table td {
+    border: 2px solid rgb(166, 166, 166);
+}
+
+.cart-item>* {
+    padding: 10px;
+}
+
+.item-img-title {
+    text-align: center;
+}
+
+.item-img {
+    width: 200px;
+    height: 100px;
+    display: block;
+}
+
+.cart-total {
+    text-align: right;
+}
+
+.card-section {}

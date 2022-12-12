@@ -131,6 +131,17 @@ function purchase() {
 
     if (user.orderHistory == undefined) user.orderHistory = [];
     user.orderHistory.unshift(order);
+
+    let inventory = getInventory();
+    user.cart.forEach(item => {
+        inventory.forEach(inventoryItem => {
+            if (inventoryItem.name == item.name) {
+                inventoryItem.qty -= item.qty;
+            }
+        });
+    });
+    localStorage.setItem("inventory", JSON.stringify(inventory));
+
     user.cart = [];
     setUser(user);
     window.location = "./receipt-page.html";

@@ -10,9 +10,9 @@
 
 
 .logo-nav {
-    
+
     text-align: center;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)) ,url(./images/food-wallpaper.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/food-wallpaper.jpg);
 
 
 }
@@ -34,7 +34,7 @@
 nav {
     display: flex;
     justify-content: space-around;
-    
+
 
 }
 
@@ -42,7 +42,7 @@ nav {
     font-weight: 800;
     font-size: 35px;
     margin-top: 50px;
-   
+
 
 
 }
@@ -59,6 +59,7 @@ nav {
     text-decoration: underline;
 
 }
+
 /* nav bar end */
 
 
@@ -67,7 +68,7 @@ nav {
 /* body/plot start */
 
 .main-content {
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(./images/greywood.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/greywood.jpg);
     height: 100rem;
     width: 100%;
     display: flex;
@@ -120,9 +121,9 @@ nav {
     text-align: center;
 }
 
-.cart-overview{
+.cart-overview {
     width: 400px;
-    
+
 }
 
 

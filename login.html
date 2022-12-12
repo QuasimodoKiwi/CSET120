@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chicken Checkout | Login</title>
+    <link rel="stylesheet" href="./styles/login.css">
+    </headl>
+
+<body>
+    <header>
+        <h1>Login Page</h1>
+    </header>
+    <section class="login-container">
+        <div class="loginInput">
+            <div>
+                <h3>Login</h3>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+            </div>
+
+            <div>
+                <label id="passwordLabel" for="password">Password:</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <button id="submit" onclick="login()">Submit</button>
+
+            <div id="warningText" style="display: none; color: red;">
+            </div>
+        </div>
+        <div class="other-inputs">
+            <div>
+                <button id="noPasswordButton" onclick="newPassword()">Forgot password?</button>
+            </div>
+            <div>
+                <button id="noAccountButton" onclick="signup()">Didn't create an account?</button>
+            </div>
+        </div>
+    </section>
+    <script src="./scripts/login.js"></script>
+</body>
+
+</html>

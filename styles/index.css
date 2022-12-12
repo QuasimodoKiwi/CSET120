@@ -1,0 +1,531 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+
+
+
+
+
+
+/* slide show start */
+
+.show-text {
+    text-align: center;
+    color: white;
+    transition: 4s;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+.slide-show {
+    /* background-color: aqua; */
+    width: 400px;
+    margin-left: 41%;
+    overflow: hidden;
+    transition: 2s;
+
+}
+
+.slides {
+    width: 400%;
+}
+
+.slide {
+    transition: 2s;
+}
+
+.slides input {
+    display: none;
+}
+
+
+.slide-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slides img {
+    width: 50vh;
+    height: 50vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* style for manual navigation start */
+
+.manual-navigation {
+    position: absolute;
+    display: flex;
+    width: 400px;
+    justify-content: center;
+
+
+
+}
+
+.manual-btn {
+    border: 4px solid rgb(238, 38, 7);
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1s;
+    height: 3rem;
+    width: 3rem;
+    margin-top: -5rem;
+}
+
+/*  using the function :not (:lastchild)  to add margin to each new object independently */
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+
+
+.manual-btn:hover {
+    background-color: rgb(255, 41, 17);
+}
+
+
+#radio1:checked~.slide-list {
+    margin-left: 0%;
+}
+
+#radio2:checked~.slide-list {
+    margin-left: -37%;
+}
+
+#radio3:checked~.slide-list {
+    margin-left: -99%;
+}
+
+#radio4:checked~.slide-list {
+    margin-left: -310%;
+}
+
+/* slide show end */
+
+
+
+
+/* top heading */
+
+
+.top-background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/food-wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.sign-up-in {
+    width: 100%;
+    text-align: right;
+    padding-top: 2%;
+
+}
+
+.sign-up-in a {
+    text-decoration: none;
+    color: white;
+    font-size: 45px;
+    padding: 3%;
+}
+
+
+.sign-up-in a:hover {
+    text-decoration: underline;
+}
+
+/* nav bar and logo */
+.heading {
+    width: 100%;
+    /* background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)) ,url(./Images/food-wallpaper.jpg);
+    background-size: cover; */
+
+}
+
+
+
+.logo-nav {
+    /* background-color: aqua; */
+    text-align: center;
+
+
+}
+
+.logo {
+    border-radius: 50%;
+    height: 250px;
+}
+
+
+.logo-nav h1 {
+    color: white;
+    font-size: 45px;
+    text-decoration: underline;
+}
+
+
+
+
+/* nav bar */
+nav {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.navbar-1 {
+    font-weight: 800;
+    font-size: 35px;
+    margin-top: 50px;
+
+
+}
+
+.navbar-1 a {
+    text-decoration: none;
+    color: white;
+    font-size: 45px;
+    text-shadow: 100px;
+}
+
+.navbar-1 a:hover {
+    text-transform: uppercase;
+    text-decoration: underline;
+
+}
+
+
+
+
+
+
+
+/* Plot-Body */
+
+
+
+
+
+.plot-row-1 {
+    background-color: darkgrey;
+    display: flex;
+    justify-content: space-between;
+    /* background-image: url(./Images/food-wallpaper.jpg); */
+    background-size: cover;
+    background-attachment: fixed;
+    height: 700px;
+    margin: 50px;
+}
+
+
+
+.plot-row-left {
+    background-color: hotpink;
+    width: 40%;
+    margin: 40px 80px;
+
+
+}
+
+.plot-row-left img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.SlideShow {
+    height: 400px;
+}
+
+
+.plot-row-right {
+    background-color: rgba(245, 245, 245, 0.768);
+    width: 60%;
+    text-align: center;
+
+
+
+}
+
+.plot-right-text,
+p {
+    /* margin-top: 25%; */
+    font-weight: 400px;
+    font-size: 40px;
+    margin: 60px;
+
+
+}
+
+
+.plot-row-right button {
+    height: 100px;
+    width: 200px;
+    border-radius: 30%;
+    border: 4px solid black;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: transparent;
+    transition: 4.2s;
+
+}
+
+.plot-row-right button:hover {
+    background-color: chartreuse;
+}
+
+
+.plot-row-right button a {
+    color: rgb(0, 0, 0);
+}
+
+
+/* reviews */
+
+.reviews {
+    /* background-image: url(./Images/far-hd.jpg); */
+    background-size: cover;
+    text-align: center;
+    height: 900px;
+}
+
+.reviews h2 {
+    color: white;
+    /* margin-top: 50px; */
+    height: 100px;
+    font-size: 80px;
+    margin-top: 50px;
+    text-decoration: underline;
+}
+
+
+
+/* review boxes */
+
+.reviews {
+    height: 800px;
+}
+
+.content {
+
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-size: 5vh;
+}
+
+.content img {
+    height: 200px;
+    border-radius: 50%;
+}
+
+.reviews-leftbox,
+.reviews-rightbox {
+    background-color: rgba(255, 246, 246, 0.733);
+    margin: 50px;
+    border: none;
+
+}
+
+
+/* Social media */
+
+
+
+
+
+.social {
+    width: 100%;
+    margin: 50px;
+
+
+}
+
+.icon-links {
+    width: 100%;
+    font-size: 95px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.icon-links ion-icon:hover {
+    color: rgb(69, 69, 239);
+}
+
+
+
+
+
+/* contact us */
+
+.customer-message {
+    height: 800px;
+}
+
+
+.contact-us {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.contact-form {
+    height: 400px;
+
+}
+
+
+.contact-list {}
+
+.contact-list li {
+    margin-top: 50px;
+    font-size: 45px;
+}
+
+.contact-list input {
+    height: 100px;
+    width: 400px;
+    border-radius: 20%;
+}
+
+.contact-form h2 {
+    font-size: 65px;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1024px) {
+
+
+    .plot-row-1 {
+        background-color: darkgrey;
+        display: flex;
+        justify-content: space-between;
+        /* background-image: url(./Images/food-wallpaper.jpg); */
+        background-size: cover;
+        background-attachment: fixed;
+        height: 400px;
+        margin: 50px;
+    }
+
+
+
+
+    .plot-row-right {
+        background-color: rgba(245, 245, 245, 0.768);
+        width: 60%;
+        text-align: center;
+        /* overflow: scroll; */
+        overflow: auto;
+        font-size: small;
+
+
+    }
+
+    .plot-right-text {
+        /* margin-top: 25%; */
+        font-weight: 400px;
+        font-size: 20px;
+        margin: 40px;
+
+
+    }
+
+
+    .reviews-leftbox,
+    .reviews-rightbox {
+        background-color: rgba(255, 246, 246, 0.733);
+        margin: 50px;
+        border: none;
+        height: 400px;
+        overflow: scroll;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+
+
+
+}
+
+@media only screen and (max-width:768px) {
+
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+
+    .navbar-1 a {
+        font-size: 25px;
+        font-weight: 900;
+    }
+
+    .plot-row-left img {
+        width: 300px;
+
+    }
+
+    .plot-row-1 {
+        height: 600px;
+        margin: 10px;
+    }
+
+
+
+
+
+}

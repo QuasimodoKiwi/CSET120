@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+nav>li {
+    list-style: none;
+    background-color: white;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+header>nav {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: rgb(225, 225, 225);
+    padding: 10px;
+}
+
+.title {
+    padding: 5px;
+}
+
+.user-view {
+    padding: 0 1% 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.blob {
+    background-color: rgb(225, 225, 225);
+    padding: 5px;
+    width: fit-content;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.order-history {}
+
+.orders {
+    max-height: 200px;
+    overflow: scroll;
+    border-top: 1px gray solid;
+    border-radius: 1px;
+}
+
+.order {
+    display: block;
+    text-align: left;
+    margin-top: 5px;
+    padding: 1px;
+    min-width: 300px;
+}
+
+.order-date-id-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-date {
+    margin-right: 10px;
+}
+
+.order-details {
+    position: absolute;
+    top: calc();
+}
+
+.no-orders-message {
+    margin-top: 5px;
+    color: rgb(65, 65, 65);
+}
+
+.ban-btn-sect {
+    margin: 5px;
+}
+
+.status-btn {
+    padding: 10px;
+    font-size: 2em;
+    border-radius: 10px;
+    color: black;
+}
+
+.status-btn--ban {
+    background-color: red;
+}
+
+.status-btn--unban {
+    background-color: green;
+}

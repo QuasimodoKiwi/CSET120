@@ -1,0 +1,189 @@
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* header NAV */
+.main-header {
+    padding: 100px;
+    background-image: url("../assets/images/chicken\ smoke.gif");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-size: 45px;
+}
+
+.main-header h1 {
+    text-align: center;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.main-content {
+    padding: 10px;
+    margin: 40px 0 20px;
+    overflow: hidden;
+}
+
+/* SIDE CART */
+
+.cart {
+    float: right;
+    width: 25%;
+    /* background-color: blueviolet; */
+
+}
+
+/* Body Plot */
+.menu-display {
+    text-align: center;
+}
+
+.menu-items {
+    margin-top: 20px;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shop-item {
+    box-shadow: 2px 2px 3px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 0.33% 10px;
+    width: 24%;
+    overflow: hidden;
+}
+
+.shop-item-title {
+    text-align: center;
+}
+
+.shop-item-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-item-price-and-add-to-cart {
+    margin-left: 3px;
+    padding-left: 3px;
+    border-left: 1px solid rgb(166, 166, 166);
+    width: 25%;
+    text-align: center;
+}
+
+.shop-item-description-and-allergies {
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-item-price {
+    font-size: 1.25em;
+    font-weight: 900;
+}
+
+.shop-item-image {
+    margin-bottom: 20px;
+    display: block;
+    margin: 5px auto;
+    height: 200px;
+    width: 100%;
+}
+
+.cart-display {
+    text-align: center;
+}
+
+.cart-table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-remove-btn {
+    width: 5%;
+}
+
+.cart-table-item {
+    width: 60%;
+}
+
+.cart-table-price {
+    width: 15%;
+    text-align: left;
+}
+
+.cart-table-qty {
+    width: 20%;
+    text-align: left;
+}
+
+.cart-table th,
+.cart-table td {
+    border-bottom: 2px solid rgb(166, 166, 166);
+}
+
+.trash-td {
+    text-align: center;
+}
+
+.cart-trash-btn {
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trash-icon {
+    font-size: 2em;
+    color: red;
+}
+
+.cart-img-title {
+    text-align: center;
+}
+
+.cart-title {
+    text-align: center;
+}
+
+.cart-img {
+    width: 200px;
+    height: 100px;
+}
+
+.cart-price {
+    font-size: 1.15em;
+}
+
+.cart-qty-input {
+    width: 100%;
+    font-size: 1.15em;
+}
+
+.cart-total-proceed-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.proceed-btn {
+    padding: 5px 30px;
+    font-size: 1.15em;
+    background-color: yellow;
+}

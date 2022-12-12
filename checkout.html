@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Checkout | Checkout</title>
+
+    <link rel="stylesheet" href="./styles/checkout.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="logo-nav">
+            <img src="" class="logo">
+            <h1>Chicken Checkout</h1>
+            <nav class="navbar-1">
+                <a href="./index.html">Home</Menu></a>
+                <a href="./Menu-2.0.html">Menu</a>
+                <a href="./index.html">About-Us</a>
+                <a href="./profile-page.html">Profile</a>
+                <a href="./Menu-2.0.html">New-Order</a>
+            </nav>
+        </div>
+
+
+
+    </section>
+
+    <header></header>
+
+    <section class="main-content">
+        <a href="./Menu-2.0.html">Back to Menu</a>
+
+        <section class="main-content">
+
+
+
+            <div class="payment-overview content-blob">
+                <h2 class="content-blob--title">Payment Method</h2>
+                <form>
+                    <p>Cash or Card</p>
+                    <label for="payment-type--card">Card</label>
+                    <input type="radio" name="payment-type" id="payment-type--card" onchange="updatePaymentType()">
+                    <label for="payment-type--cash">Cash</label>
+                    <input type="radio" name="payment-type" id="payment-type--cash" onchange="updatePaymentType()">
+                    <div class="card-list">
+                    </div>
+                    <div class="card-section">
+                        <form>
+                            <label for="card-type">Card Type:</label>
+                            <input type="text" name="card-type" id="card-type-input" placeholder="ex. Master">
+                            <br>
+
+                            <label for="card-number">Card Number:</label>
+                            <input type="text" name="card-number" id="card-number-input" placeholder="xxxxxxxxxxxxxx">
+                            <br>
+
+                            <label for="card-cvv">CVV:</label>
+                            <input type="text" name="card-cvv" id="card-cvv-input" placeholder="xxx">
+                            <br>
+
+                            <label for="card-expiration">Expiration Date:</label>
+                            <input type="text" name="card-expiration" id="card-expiration-input" placeholder="mm/yy">
+                            <br>
+
+                            <label for="card-name">Name on Card:</label>
+                            <input type="card-name" name="card-name" id="card-name-input"
+                                placeholder="First Name Last Name">
+                            <br>
+                        </form>
+                    </div>
+                </form>
+            </div>
+
+            <div class="address-form content-blob">
+                <h2 class="content-blob--title">Shipping Address</h2>
+                <form>
+                    <label for="address">Address:</label>
+                    <input type="text" name="address" id="address">
+                    <br>
+
+                    <label for="city">City:</label>
+                    <input type="text" name="city" id="city">
+                    <br>
+
+                    <label for="state">State:</label>
+                    <input type="text" name="state" id="state">
+                    <br>
+
+                    <label for="zipCode">Zip Code:</label>
+                    <input type="text" name="zipCode" id="zipCode">
+                    <br>
+                </form>
+            </div>
+
+
+
+
+            <div class="cart-overview content-blob">
+                <h2 class="content-blob--title">Cart</h2>
+                <table class="cart-table">
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                    </tr>
+                </table>
+                <h2 class="cart-total"></h2>
+            </div>
+
+
+            <div class="purchase-btn-div content-blob">
+                <button class="purchase-btn" onclick="purchase()">Purchase</button>
+            </div>
+
+
+
+
+
+        </section>
+
+        <script src="./scripts/checkout.js"></script>
+</body>
+
+</html>

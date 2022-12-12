@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: x-large;
+}
+
+
+
+.logo-nav {
+
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/food-wallpaper.jpg);
+
+
+}
+
+.logo {
+    border-radius: 50%;
+    height: 250px;
+}
+
+
+.logo-nav h1 {
+    color: white;
+    font-size: 45px;
+    text-decoration: underline;
+}
+
+
+/* nav bar */
+nav {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.navbar-1 {
+    font-weight: 800;
+    font-size: 35px;
+    margin-top: 50px;
+
+
+
+}
+
+.navbar-1 a {
+    text-decoration: none;
+    color: white;
+    font-size: 45px;
+    text-shadow: 100px;
+}
+
+.navbar-1 a:hover {
+    text-transform: uppercase;
+    text-decoration: underline;
+
+}
+
+/* nav bar end */
+
+
+
+
+/* body/plot start */
+
+.main-content {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/greywood.jpg);
+    height: 100rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.content-blob {
+    padding: 10px;
+    width: fit-content;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid black;
+    height: fit-content;
+}
+
+.content-blob--title {
+    text-align: center;
+}
+
+.cart-table {
+    border-collapse: collapse;
+}
+
+.cart-table th,
+.cart-table td {
+    border: 2px solid rgb(166, 166, 166);
+}
+
+.cart-item>* {
+    padding: 10px;
+}
+
+.item-img-title {
+    text-align: center;
+}
+
+.item-img {
+    width: 200px;
+    height: 100px;
+    display: block;
+}
+
+.cart-total {
+    text-align: right;
+}
+
+
+.purchase-btn-div {
+    width: 600px;
+    text-align: center;
+}
+
+.cart-overview {
+    width: 400px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card-section {}
